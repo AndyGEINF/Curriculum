@@ -4,37 +4,41 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #566694;
+    background: linear-gradient(to right, #0a2571df 65%, #cccbcbe0 35%);
     font-family: Arial, sans-serif;
 }
 
 .container {
-    position: relative;
+    position: relative;     
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: rgba(228, 243, 243, 0.905);
+    background-color: rgba(238, 238, 238, 0);
     align-items: left;
 }
 
 .sidebar-container {
-    width: 85%; /* Ajuste al tamaño de la barra lateral */
-    background-color: #0a2571df;
+    width: 100%; /* Ajuste al tamaño de la barra lateral */
+    background-color: #17307400;
     color: white;
-    padding: 20px;
+    padding: 20px 20px 20px 0px; 
     box-sizing: border-box;
     display: flex;
+    
 }
 
 
 
 
 .sidebar {
-    width: 70%;
+    width: 100%; /* Ajuste al tamaño de la barra lateral */
     background-color: thistle;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 8px;
+    padding-right: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.401);
 }
 
 .sidebar-perfil {
@@ -44,14 +48,14 @@ body {
 }
 
 .sidebar-perfil img {
+    margin-top: 10px;
     width: 120px;
-    height: 140px;
-    border-radius: 50%;
-    background-color: #ccc;
+    height: 144px;  
+    background-color: #ffffff;
     margin-bottom: 10px;
     align-items: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    border: 2px solid white; /* Añadir borde blanco */
+    border: 2px solid rgb(51, 7, 7); /* Añadir borde blanco */
 }
 
 .sidebar h2 {
@@ -76,11 +80,11 @@ body {
 }
 
 .content {
-    width: 80%; /* Ajustamos para que el div blanco se superponga */
+    width: 100%; /* Ajustamos para que el div blanco se superponga */
     background-color: white;
     padding: 20px;
     box-sizing: border-box;
-    margin-left: -350px; /* Superposición */
+    margin-left: -35px; /* Superposición */
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.401);
     margin-top: 20px;
