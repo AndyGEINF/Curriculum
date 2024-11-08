@@ -18,7 +18,7 @@ body {
 }
 
 .sidebar-container {
-    width: 100%; /* Ajuste al tamaño de la barra lateral */
+    width: 70%; /* Ajuste al tamaño de la barra lateral */
     background-color: #17307400;
     color: white;
     padding: 20px 20px 20px 0px; 
@@ -32,7 +32,7 @@ body {
 
 .sidebar {
     width: 100%; /* Ajuste al tamaño de la barra lateral */
-    background-color: thistle;
+    background-color: rgba(127, 156, 115, 0.788);
     display: flex;
     flex-direction: column;
     align-items: center;
