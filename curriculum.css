@@ -4,7 +4,7 @@ body {
     align-items: flex-start; /* Alinea la parte superior del contenido */
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to right, #0a2571df 65%, #cccbcbe0 35%);
+    background: linear-gradient(to right, #0A2571 65%, #cccbcbe0 35%);
     font-family: Arial, sans-serif;
     overflow: auto; /* Permite desplazamiento si el contenido crece demasiado */
 }
@@ -30,25 +30,25 @@ body {
     
 
 
-
-
-
 .sidebar {
     width: 100%; /* Ajuste al tamaño de la barra lateral */
     height: 100%;
-    background-color: rgba(127, 156, 115, 0.788);
+    font-size: 14px;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
     padding-right: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.401);
+   
 }
 
 .sidebar-perfil {
+    width: 100%; /* Ajuste al tamaño de la barra lateral */
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Línea divisoria entre secciones */
 }
 
 .sidebar-perfil img {
@@ -60,6 +60,12 @@ body {
     align-items: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     border: 2px solid rgb(51, 7, 7); /* Añadir borde blanco */
+}
+
+.sidebar-perfil h2 {
+    
+    font-family: Koh Santepheap;
+  
 }
 
 .sidebar h2 {
@@ -75,16 +81,76 @@ body {
 }
 
 .sidebar .section {
-    width: 60%; /* Ocupa todo el ancho del contenedor */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
     box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
-    padding: 20px 0; /* Espaciado uniforme */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Línea divisoria entre secciones */
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido de la sección */
+    gap: 5px; /* Añade espacio entre elementos */
+  
 }
 
-.section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+.ul-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px; /* Espacio entre las listas */
+    width: 50%; /* Ajusta este valor según el ancho deseado para los párrafos */
+    margin: 0 auto; /* Centra el párrafo dentro de la sección */
+    text-align: left; /* Alinea el texto a la izquierda para que todos empiecen en el mismo lugar */
+    
+ 
+    margin-left: 110px;
+    color: #fff;
+ 
 }
+
+.sidebar :nth-child(5) {
+    margin-bottom: 100px;
+}
+
+.sidebar .sectionThree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.sidebar .sectionThree ul {
+    display: inline-block;
+    width: auto; /* Ajusta el ancho según sea necesario */
+    margin: 0 10px; /* Espacio entre las listas */
+}
+
+.sidebar .section h3 {
+    width: 100%; /* Asegura que el h3 ocupe todo el ancho de la sidebar */
+    
+    display: flex; /* Alinea el contenido en línea */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centra el texto dentro del h3 */
+    background-color: #3C59B0; /* Fondo opcional para que resalte */
+    padding: 10px; /* Añade algo de padding para darle espacio */
+    margin: 10px; /* Elimina márgenes adicionales */
+    
+}
+
+.icon{
+    margin-right: 5px;
+}
+
+.sidebar .section ul {
+    width: 50%; /* Ajusta este valor según el ancho deseado para los párrafos */
+    margin: 0 auto; /* Centra el párrafo dentro de la sección */
+    text-align: left; /* Alinea el texto a la izquierda para que todos empiecen en el mismo lugar */
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.6;
+    
+    
+}
+
 
 
 
@@ -93,12 +159,12 @@ body {
     background-color: white;
     padding: 20px;
     box-sizing: border-box;
-    margin-left: -35px;
-    border-radius: 8px;
+    width: 70%; /* Ajuste al tamaño del contenido */
+    border-radius: 32px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.401);
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -115,12 +181,16 @@ body {
     text-align: center;
     border-radius: 4px;
     margin-bottom: 15px;
+    margin-right: -40px; /* Sobresale del contenedor por la derecha */
 }
 
 .content p {
     font-size: 14px;
     color: #333;
+    padding-left: 8px;
+    
     line-height: 1.6;
+    text-align: justify; /* Justifica el texto */
 }
 
 .project-container {
@@ -141,6 +211,26 @@ body {
     flex-direction: column;
 }
 
+.education, .experience {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.education li, .experience li {
+    font-weight: bolder;
+    
+}
+
+.education p, .experience p {
+    padding-left: 0px;
+    
+}
+
+
+
 /* Mantén el estilo para las imágenes y el cuerpo de cada tarjeta */
 .project-header img {
     width: 100%;
@@ -153,12 +243,110 @@ body {
     text-align: center;
 }
 
+.project-body a{
+    color: #091016; 
+ 
+}
+
+.project-body a:hover {
+    color: #0a2571df;
+    text-decoration: underline; 
+}
+
 .project-body h3 {
     margin: 10px 0 5px;
     font-size: 1.2em;
+    text-align: left;
 }
 
 .project-body p {
+    padding-left: 0px;
     margin: 5px 0;
     color: #666;
 }
+
+/* Social media */
+/* From Uiverse.io by vinodjangid07 */ 
+.card {
+    width: fit-content;
+    height: fit-content;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    
+  }
+  
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    overflow: hidden;
+    border-radius: 100%;
+    transition-duration: .3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra para efecto de sobresalir */
+}
+
+.socialContainer:hover {
+    transform: translateY(-5px); /* Mueve el contenedor hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta la sombra para mayor efecto */
+}
+
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #091216;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+.socialSvg {
+    width: 17px;
+    
+}
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
