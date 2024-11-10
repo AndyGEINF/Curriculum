@@ -1,23 +1,23 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinea la parte superior del contenido */
+    align-items: flex-start; 
     height: 100vh;
     margin: 0;
     background: linear-gradient(to right, #0A2571 65%, #cccbcbe0 35%);
     font-family: Arial, sans-serif;
-    overflow: auto; /* Permite desplazamiento si el contenido crece demasiado */
+    overflow: auto; 
 }
 .container {
     display: flex;
     width: 100%;
-    min-height: 100vh; /* Asegura que el contenedor ocupe al menos toda la altura de la pantalla */
+    min-height: 100vh; 
     background-color: rgba(238, 238, 238, 0);
-    align-items: stretch; /* Hace que los hijos crezcan juntos */
+    align-items: stretch; 
 }
 
 .sidebar-container {
-    width: 40%; /* Ajuste al tamaño de la barra lateral */
+    width: 40%; 
     color: white;
     padding: 20px 10px;
     box-sizing: border-box;
@@ -31,10 +31,10 @@ body {
 
 
 .sidebar {
-    width: 100%; /* Ajuste al tamaño de la barra lateral */
+    width: 100%; 
     height: 100%;
     font-size: 14px;
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    justify-content: space-between; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,11 +44,11 @@ body {
 }
 
 .sidebar-perfil {
-    width: 100%; /* Ajuste al tamaño de la barra lateral */
+    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Línea divisoria entre secciones */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); 
 }
 
 .sidebar-perfil img {
@@ -59,7 +59,7 @@ body {
     margin-bottom: 10px;
     align-items: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    border: 2px solid rgb(51, 7, 7); /* Añadir borde blanco */
+    border: 2px solid rgb(51, 7, 7); 
 }
 
 .sidebar-perfil h2 {
@@ -81,13 +81,13 @@ body {
 }
 
 .sidebar .section {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
+    width: 100%; 
+    box-sizing: border-box; 
     padding: 10px 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el contenido de la sección */
-    gap: 5px; /* Añade espacio entre elementos */
+    align-items: center; 
+    gap: 5px; 
   
 }
 
@@ -95,10 +95,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 80px; /* Espacio entre las listas */
-    width: 50%; /* Ajusta este valor según el ancho deseado para los párrafos */
-    margin: 0 auto; /* Centra el párrafo dentro de la sección */
-    text-align: left; /* Alinea el texto a la izquierda para que todos empiecen en el mismo lugar */
+    gap: 80px; 
+    width: 50%; 
+    margin: 0 auto; 
+    text-align: left; 
     
  
     margin-left: 110px;
@@ -119,20 +119,20 @@ body {
 
 .sidebar .sectionThree ul {
     display: inline-block;
-    width: auto; /* Ajusta el ancho según sea necesario */
-    margin: 0 10px; /* Espacio entre las listas */
+    width: auto; 
+    margin: 0 10px; 
 }
 
 .sidebar .section h3 {
-    width: 100%; /* Asegura que el h3 ocupe todo el ancho de la sidebar */
+    width: 100%; 
     
-    display: flex; /* Alinea el contenido en línea */
+    display: flex; 
     align-items: center;
     justify-content: center;
-    text-align: center; /* Centra el texto dentro del h3 */
-    background-color: #3C59B0; /* Fondo opcional para que resalte */
-    padding: 10px; /* Añade algo de padding para darle espacio */
-    margin: 10px; /* Elimina márgenes adicionales */
+    text-align: center; 
+    background-color: #3C59B0; 
+    padding: 10px; 
+    margin: 10px; 
     
 }
 
@@ -141,9 +141,9 @@ body {
 }
 
 .sidebar .section ul {
-    width: 50%; /* Ajusta este valor según el ancho deseado para los párrafos */
-    margin: 0 auto; /* Centra el párrafo dentro de la sección */
-    text-align: left; /* Alinea el texto a la izquierda para que todos empiecen en el mismo lugar */
+    width: 50%; 
+    margin: 0 auto; 
+    text-align: left; 
     font-size: 14px;
     color: #fff;
     line-height: 1.6;
@@ -155,11 +155,11 @@ body {
 
 
 .content {
-    flex-grow: 1; /* Permite que el contenido crezca */
+    flex-grow: 1; 
     background-color: white;
     padding: 20px;
     box-sizing: border-box;
-    width: 70%; /* Ajuste al tamaño del contenido */
+    width: 70%;
     border-radius: 32px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.401);
     margin-top: 20px;
@@ -181,7 +181,7 @@ body {
     text-align: center;
     border-radius: 4px;
     margin-bottom: 15px;
-    margin-right: -40px; /* Sobresale del contenedor por la derecha */
+    margin-right: -40px; 
 }
 
 .content p {
@@ -190,7 +190,7 @@ body {
     padding-left: 8px;
     
     line-height: 1.6;
-    text-align: justify; /* Justifica el texto */
+    text-align: justify;
 }
 
 .project-container {
@@ -205,7 +205,7 @@ body {
     padding: 15px;
     background-color: #f7f7f7;
     box-shadow: 10px 14px 11px rgba(0, 0, 0, 0.1);
-    width: calc(33.33% - 20px); /* Ajusta el ancho para que quepan tres tarjetas */
+    width: calc(33.33% - 20px);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -230,11 +230,9 @@ body {
 }
 
 
-
-/* Mantén el estilo para las imágenes y el cuerpo de cada tarjeta */
 .project-header img {
     width: 100%;
-    height: auto;
+    height: 130px;
     border-radius: 8px;
 }
 
@@ -265,8 +263,7 @@ body {
     color: #666;
 }
 
-/* Social media */
-/* From Uiverse.io by vinodjangid07 */ 
+
 .card {
     width: fit-content;
     height: fit-content;
@@ -279,23 +276,23 @@ body {
     
   }
   
-/* for all social containers*/
+
 .socialContainer {
     width: 52px;
     height: 52px;
     background-color: rgb(44, 44, 44);
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
+    align-items: center; 
+    justify-content: center;
     overflow: hidden;
     border-radius: 100%;
     transition-duration: .3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra para efecto de sobresalir */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .socialContainer:hover {
-    transform: translateY(-5px); /* Mueve el contenedor hacia arriba */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta la sombra para mayor efecto */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
   /* instagram*/
