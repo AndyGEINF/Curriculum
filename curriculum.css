@@ -229,6 +229,15 @@ body {
     
 }
 
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el levantamiento y la sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Levanta la tarjeta 10px hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar efecto de levantamiento */
+}
 
 .project-header img {
     width: 100%;
