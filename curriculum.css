@@ -295,26 +295,22 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-  /* instagram*/
+
   .containerOne:hover {
     background-color: #d62976;
     transition-duration: .3s;
   }
-  /* twitter*/
+ 
   .containerTwo:hover {
     background-color: #0072b1;
     transition-duration: .3s;
   }
-  /* linkdin*/
+  
   .containerThree:hover {
     background-color: #091216;
     transition-duration: .3s;
   }
-  /* Whatsapp*/
-  .containerFour:hover {
-    background-color: #128C7E;
-    transition-duration: .3s;
-  }
+ 
   
   .socialContainer:active {
     transform: scale(0.9);
